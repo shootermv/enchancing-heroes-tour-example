@@ -8,16 +8,16 @@ import { Injectable } from '@angular/core';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice', deeds:[{id:1, desc:'saved puppy', type: 'good'},{id:2, desc:'saved kitten', type: 'good'}] },
-      { id: 12, name: 'Narco', deeds:[{id:3, desc:'drived at 180kph', type: 'bad'}] },
-      { id: 13, name: 'Bombasto', deeds:[{id:4, desc:'killed a person', type: 'bad'}, {id:5, desc:'helped a cop', type: 'good'}] },
-      { id: 14, name: 'Celeritas', deeds:[] },
-      { id: 15, name: 'Magneta', deeds:[] },
-      { id: 16, name: 'RubberMan', deeds:[] },
-      { id: 17, name: 'Dynama', deeds:[] },
-      { id: 18, name: 'Dr IQ', deeds:[] },
-      { id: 19, name: 'Magma', deeds:[] },
-      { id: 20, name: 'Tornado', deeds:[] }
+      { id: 11, name: 'Dr Nice', age:14, deeds:[{id:1, desc:'saved puppy', type: 'good'}, {id:2, desc:'saved kitten', type: 'good'}] },
+      { id: 12, name: 'Narco', age:17, deeds:[{id:3, desc:'drived at 180kph', type: 'bad'}] },
+      { id: 13, name: 'Bombasto', age:18, deeds:[{id:4, desc:'killed a person', type: 'bad'}, {id:5, desc:'helped a cop', type: 'good'}] },
+      { id: 14, name: 'Celeritas', age:24, deeds:[] },
+      { id: 15, name: 'Magneta', age:121, deeds:[] },
+      { id: 16, name: 'RubberMan', age:14, deeds:[] },
+      { id: 17, name: 'Dynama', age:31, deeds:[] },
+      { id: 18, name: 'Dr IQ', age:24, deeds:[] },
+      { id: 19, name: 'Magma', age:16, deeds:[] },
+      { id: 20, name: 'Tornado', age:41, deeds:[] }
     ];
     return {heroes};
   }

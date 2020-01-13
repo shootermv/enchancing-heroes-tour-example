@@ -19,6 +19,7 @@ Since im a human(or so i thought until now) - it can happen you may see some mis
 - [Tests](#tests)
 - [Anitmation](#transition-animations)
 - [Validation](#validation)
+- [ngContent](#ngcontent)
 
 ## Nested Routes
 To the original example hero`s data i have added "deeds" field, where i put records of deeds of this particular hero. some of them good and some - bad
@@ -73,3 +74,7 @@ Here i added opacity transition - when navigating between pages the content appe
 ## Validation
 No serious app cannot function without using forms and if so - validation is important feature.  
 Here i added simple 'required' validation of 'name' and 'email' inputs of hero at 'details' page. Until field is invalid - the 'save' button blocked from saving
+
+## ngContent
+When you need some custom markup to be contained inside your component - best way to handle this- by using 'ng-content' directive.  
+I have created a 'deed' component that conditionally displays 🍔 emoji(for unknown reason) if the hero deed is bad 

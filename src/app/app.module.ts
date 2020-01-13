@@ -16,7 +16,7 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { DeedsComponent }       from './hero-deeds/deeds.component';
-
+import { DeedComponent }        from './hero-deeds/deeds.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -38,7 +38,8 @@ import { DeedsComponent }       from './hero-deeds/deeds.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    DeedsComponent
+    DeedsComponent,
+    DeedComponent
   ],
   bootstrap: [ AppComponent ]
 })

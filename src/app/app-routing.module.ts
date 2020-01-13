@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'detail/:id/deeds', component: DeedsComponent, canActivate: [ProtectGuard] },
-  { path: 'heroes', component: HeroesComponent }
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule)},
 ];
 
 @NgModule({

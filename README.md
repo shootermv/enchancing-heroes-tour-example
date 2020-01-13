@@ -20,6 +20,7 @@ Since im a human(or so i thought until now) - it can happen you may see some mis
 - [Anitmation](#transition-animations)
 - [Validation](#validation)
 - [ngContent](#ngcontent)
+- [Lazy Loaded Modules](#lazy-loaded-modules)
 
 ## Nested Routes
 To the original example hero`s data i have added "deeds" field, where i put records of deeds of this particular hero. some of them good and some - bad
@@ -78,3 +79,7 @@ Here i added simple 'required' validation of 'name' and 'email' inputs of hero a
 ## ngContent
 When you need some custom markup to be contained inside your component - best way to handle this- by using 'ng-content' directive.  
 I have created a 'deed' component that conditionally displays 🍔 emoji(for unknown reason) if the hero deed is bad 
+
+## Lazy Loaded Modules
+Lazyness is usually a bad characteristics, unless you are Front End developer.
+"about" module is loaded lazily (only when user navigates there) and thus - the app is much more performant!

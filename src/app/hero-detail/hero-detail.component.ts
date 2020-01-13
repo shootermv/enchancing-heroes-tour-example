@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -12,6 +12,9 @@ import { HeroService }  from '../hero.service';
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
+
+  @ViewChild("myInput", {static: false}) input: ElementRef;
+  @ViewChild("myEmail", {static: false}) emailInput: ElementRef;
 
   constructor(
     private route: ActivatedRoute,
@@ -34,6 +37,7 @@ export class HeroDetailComponent implements OnInit {
   }
 
  save(): void {
+    if (!this.input.nativeElement.checkValidity() || !this.emailInput.nativeElement.checkValidity()) return;
     this.heroService.updateHero(this.hero)
       .subscribe(() => this.goBack());
   }

@@ -18,6 +18,7 @@ Since im a human(or so i thought until now) - it can happen you may see some mis
 - [Route Guards](#route-guards)
 - [Tests](#tests)
 - [Anitmation](#transition-animations)
+- [Validation](#validation)
 
 ## Nested Routes
 To the original example hero`s data i have added "deeds" field, where i put records of deeds of this particular hero. some of them good and some - bad
@@ -68,3 +69,7 @@ run ```ng test``` and you should see some tests running...
 ## Transition Animations
 Since we want our SPA(single page app) to look more modern and cool - animations is "must-to-have"  feature.  
 Here i added opacity transition - when navigating between pages the content appears/disappers gradually
+
+## Validation
+No serious app cannot function without using forms and if so - validation is important feature.  
+Here i added simple 'required' validation of 'name' and 'email' inputs of hero at 'details' page. Until field is invalid - the 'save' button blocked from saving

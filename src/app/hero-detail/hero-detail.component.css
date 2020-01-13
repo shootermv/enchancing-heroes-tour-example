@@ -11,6 +11,9 @@ input {
   font-size: 1em;
   padding-left: .4em;
 }
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
 button {
   margin-top: 20px;
   font-family: Arial;

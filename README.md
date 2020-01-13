@@ -16,7 +16,7 @@ Since im a human(or so i thought until now) - it can happen you may see some mis
 - [Nested Routes](#nested-routes)
 - [Route Guards](#route-guards)
 - [Tests](#tests)
-
+- [Anitmation](#transition-animations)
 
 ## Nested Routes
 To the original example hero`s data i have added "deeds" field, where i put records of deeds of this particular hero. some of them good and some - bad
@@ -63,3 +63,6 @@ That is why i decided to implement warning message before user can see hero dids
 It is important that every piece of code has a test coverage. actually angular guys did [here](https://stackblitz.com/angular/qyvgpgnvmmr) very good stuff for demostration of tests,  
 yet, i will add a little bit more stuff of mine, who knows - may be this will help somebody too...  
 run ```ng test``` and you should see some tests running...
+
+## Transition Animations
+Since we want our SPA(single page app) to look more modern and cool - animations is "must-to-have"  feature. Here i added opacity trnasition - when navigating from "dashbaord" to "heroes" page the content appears/disappers gradually

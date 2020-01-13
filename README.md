@@ -3,6 +3,10 @@ Angular guys did a great work by publishing the [hero-tours](https://stackblitz.
 Yet there are some angular features which (for my opinion) left uncovered  
 Motivation behind this repo is - to give some more examples for some addtional angular features by implementing them in this repo.
 
+
+## Errors or Mistakes
+Since im a human(or so i thought until now) - it can happen you may see some mistakes or places for improvements. In such a case - will be ahppy to have your PRs (pull requests) with fixes/improvents
+
 ## Nested Routes
 To the original example hero`s data i have added "deeds" field, where i put records of deeds of this particular hero. some of them good and some - bad
 
@@ -36,4 +40,8 @@ To the original example hero`s data i have added "deeds" field, where i put reco
   }
 ]
 ```
-On a 'hero-details' page you have a nested 'deeds' route where you can see the deeds of the hero (and decide whether this hero should get present if you are Santa)
+On a 'hero-details' page you have a nested 'deeds' route where you can see the deeds of the hero (and decide whether this hero deserves present if you are Santa)
+
+## Route Guards
+Since some heroes are bad - their "deeds" may be bad too. We need to warn users that they may be exposed to some very very shocking stuff.  
+That is why i decided to implement warning message before user can see hero dids

@@ -5,12 +5,13 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { DeedsComponent }       from './hero-deeds/deeds.component';
+import { ProtectGuard }         from './route.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'detail/:id/deeds', component: DeedsComponent },
+  { path: 'detail/:id/deeds', component: DeedsComponent, canActivate: [ProtectGuard] },
   { path: 'heroes', component: HeroesComponent }
 ];
 

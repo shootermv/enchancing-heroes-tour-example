@@ -9,10 +9,11 @@ Also i tried dedicate special commit for each feature - so you can look at commi
 
 
 ## Errors or Mistakes
-Since im a human(or so i thought until now) - it can happen you may see some mistakes or places for improvements. In such a case - will be ahppy to have your PRs (pull requests) with fixes/improvents
+Since im a human(or so i thought until now) - it can happen you may see some mistakes or places for improvements. In such a case - will be happy to have your PRs (pull requests) with fixes/improvents
 
 
 ## Table of Content
+- [Demo](https://shootermv.github.io/enchancing-heroes-tour-example/)
 - [Nested Routes](#nested-routes)
 - [Route Guards](#route-guards)
 - [Tests](#tests)
@@ -65,4 +66,5 @@ yet, i will add a little bit more stuff of mine, who knows - may be this will he
 run ```ng test``` and you should see some tests running...
 
 ## Transition Animations
-Since we want our SPA(single page app) to look more modern and cool - animations is "must-to-have"  feature. Here i added opacity trnasition - when navigating from "dashbaord" to "heroes" page the content appears/disappers gradually
+Since we want our SPA(single page app) to look more modern and cool - animations is "must-to-have"  feature.  
+Here i added opacity transition - when navigating between pages the content appears/disappers gradually

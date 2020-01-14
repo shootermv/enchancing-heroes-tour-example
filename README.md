@@ -21,6 +21,7 @@ Since im a human(or so i thought until now) - it can happen you may see some mis
 - [Validation](#validation)
 - [ngContent](#ngcontent)
 - [Lazy Loaded Modules](#lazy-loaded-modules)
+- [Output](#output)
 
 ## Nested Routes
 To the original example hero`s data i have added "deeds" field, where i put records of deeds of this particular hero. some of them good and some - bad
@@ -83,3 +84,6 @@ I have created a 'deed' component that conditionally displays 🍔 emoji(for unk
 ## Lazy Loaded Modules
 Lazyness is usually a bad characteristics, unless you are Front End developer.
 "about" module is loaded lazily (only when user navigates there) and thus - the app is much more performant!
+
+## Output
+@ouput is a way for child to pass something to its parent. You can click on 'deed' and parent method of 'deeds' component will be triggered
